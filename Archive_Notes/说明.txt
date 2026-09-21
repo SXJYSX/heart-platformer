@@ -1,0 +1,14 @@
+Godot 引擎无视gdignore所在的 文件夹内的 文件, 这里都是笔记
+
+
+注意：.NET 编译器是不认 .gdignore 的，所以我们需要告诉它别编译这个文件夹。
+
+打开项目根目录下的 你的项目名.csproj 文件（可以用 VS Code 或 Rider 打开）。
+
+在 <Project> 标签内部，添加以下代码来排除这个文件夹：
+
+XML
+<ItemGroup>
+  <Compile Remove="Archive_Notes\**" />
+</ItemGroup>
+保存即可。现在这个文件夹里的 C# 代码彻底变成了“死代码”，想怎么写笔记就怎么写。

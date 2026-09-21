@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ddtflvin3o8kt"]
+
+[ext_resource type="Script" uid="uid://casqhlwl7ksyt" path="res://stages/terrain/my_floor/my_floor.gd" id="1_fwext"]
+
+[node name="MyFloor" type="StaticBody2D" unique_id=1390084698]
+collision_mask = 0
+script = ExtResource("1_fwext")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1845574756]
+polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[node name="Polygon2D" type="Polygon2D" parent="CollisionPolygon2D" unique_id=1919816309]
+polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)

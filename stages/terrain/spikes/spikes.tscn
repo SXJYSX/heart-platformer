@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cylsnxe5k4mmn"]
+
+[ext_resource type="Texture2D" uid="uid://dhe484gu65c2v" path="res://stages/terrain/spikes/spikes.png" id="1_pl42p"]
+[ext_resource type="PackedScene" uid="uid://c57srasboghwi" path="res://components/combat/hitbox/hazard_hitbox.tscn" id="2_gcycj"]
+
+[node name="Spikes" type="Node2D" unique_id=286494180]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1685486505]
+position = Vector2(8, -8)
+texture = ExtResource("1_pl42p")
+
+[node name="HazardHitbox" parent="." unique_id=1487665174 instance=ExtResource("2_gcycj")]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HazardHitbox" unique_id=841391153]
+polygon = PackedVector2Array(0, 0, 3, -6, 4, -6, 7, 0)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="HazardHitbox" unique_id=1214003662]
+polygon = PackedVector2Array(8, 0, 11, -6, 12, -6, 15, 0)

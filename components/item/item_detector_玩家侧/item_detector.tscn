@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bqkq533qctwrq"]
+
+[ext_resource type="Script" uid="uid://cn68cgyg6qu00" path="res://components/item/item_detector_玩家侧/item_detector.gd" id="1_cije1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_knrd4"]
+size = Vector2(8, 13)
+
+[node name="ItemDetector" type="Area2D" unique_id=1651755658]
+collision_layer = 0
+collision_mask = 256
+monitorable = false
+script = ExtResource("1_cije1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1056347568]
+position = Vector2(0, -7.5)
+shape = SubResource("RectangleShape2D_knrd4")

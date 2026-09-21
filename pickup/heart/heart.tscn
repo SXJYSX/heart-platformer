@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://duhuq7nlxvlft"]
+
+[ext_resource type="Script" uid="uid://d2n2gpi74hh5w" path="res://pickup/heart/heart.gd" id="1_3t8l8"]
+[ext_resource type="Texture2D" uid="uid://dl1r2rynmgo86" path="res://pickup/heart/heart.png" id="1_47k5j"]
+[ext_resource type="PackedScene" uid="uid://daw01nemweqpt" path="res://components/item/item_receiver_道具测/item_receiver.tscn" id="3_jyhpw"]
+
+[node name="Heart" type="Node2D" unique_id=1008658261 groups=["Hearts"]]
+script = ExtResource("1_3t8l8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=96357759]
+texture = ExtResource("1_47k5j")
+
+[node name="ItemReceiver" parent="." unique_id=1288100164 instance=ExtResource("3_jyhpw")]
+unique_name_in_owner = true

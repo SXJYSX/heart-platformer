@@ -1,0 +1,2 @@
+class_name PlayerSensors
+extends Node2D
